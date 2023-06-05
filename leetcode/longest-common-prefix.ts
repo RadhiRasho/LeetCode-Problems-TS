@@ -19,5 +19,3 @@ function checkEquality(values: string[]): boolean {
   }
   return true;
 }
-
-console.log(longestCommonPrefix(["Flower", "Flower", "Flower", "Flower"]));
