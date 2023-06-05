@@ -1,9 +1,11 @@
 export function mySqrt(x: number): number {
   if (x <= 1) return x;
 
-  let sqrt = 0;
-  for (let i = 0; x >= sqrt; ++i) {
+  let i = 0;
+  let sqrt = i;
+  while (sqrt <= x) {
+    i++;
     sqrt = i * i;
   }
-  return sqrt;
+  return i - 1;
 }
