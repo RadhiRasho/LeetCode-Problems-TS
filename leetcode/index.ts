@@ -8,3 +8,4 @@ export * from "./length-of-last-word";
 export * from "./plus-one";
 export * from "./add-binaries";
 export * from "./square-root";
+export * from "./climbing-stairs";

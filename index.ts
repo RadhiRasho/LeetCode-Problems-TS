@@ -1,3 +1,2 @@
-import { mySqrt } from "./leetcode";
-
-console.log(mySqrt(8));
+import { climbStairs } from "./leetcode";
+console.log(climbStairs(4));
