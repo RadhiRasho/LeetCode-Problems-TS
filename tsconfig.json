@@ -6,8 +6,12 @@
     "pretty": true,
     "target": "ESNext",
     "strict": true,
-    "outDir": "dist",
+    "outDir": "./dist",
     "rootDir": ".",
     "sourceMap": true,
-  }
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
 }
