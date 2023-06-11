@@ -5,11 +5,17 @@
   "main": "index.js",
   "scripts": {
     "start": "ts-node ./index.ts",
-    "test": "jest"
+    "test": "jest",
+    "commitmsg": "commitlint -E HUSKY_GIT_PARAMS"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "husky": {
+    "hooks": {
+      "commit-msg": "yarn run commitmsg"
+    }
+  },
   "dependencies": {
     "jest": "^29.5.0",
     "ts-jest": "^29.1.0",
@@ -17,7 +23,10 @@
     "typescript": "^5.0.4"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.6.5",
+    "@commitlint/config-conventional": "^17.6.5",
     "@types/jest": "^29.5.2",
-    "@types/node": "^20.2.5"
+    "@types/node": "^20.2.5",
+    "husky": "^8.0.3"
   }
 }
