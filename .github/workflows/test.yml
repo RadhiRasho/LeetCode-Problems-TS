@@ -15,13 +15,3 @@ jobs:
         node-version: '20.x'
     - run: yarn
     - run: yarn test
-
-  approve:
-    runs-on: ubuntu-latest
-    needs: test
-    steps:
-    - name: Approve
-      uses: "peter-evans/approval-action@v2.1.0"
-      with:
-        github-token: ${{ secrets.GITHUB_TOKEN }}
-        message: "Unit tests passed"
