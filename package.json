@@ -5,15 +5,14 @@
   "main": "index.js",
   "scripts": {
     "start": "ts-node ./index.ts",
-    "test": "jest",
-    "commitmsg": "commitlint -E HUSKY_GIT_PARAMS"
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "husky": {
     "hooks": {
-      "commit-msg": "yarn run commitmsg"
+      "pre-commit": "yarn test"
     }
   },
   "dependencies": {
