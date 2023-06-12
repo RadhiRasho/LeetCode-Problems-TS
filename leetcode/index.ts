@@ -9,3 +9,5 @@ export * from "./plus-one";
 export * from "./add-binaries";
 export * from "./square-root";
 export * from "./climbing-stairs";
+
+console.log("LLEEETTTT COOOODJFLKSDJF");
