@@ -1,21 +1,12 @@
 export function longestCommonPrefix(strs: string[]): string {
   let result = "";
 
-  for (let i = 0; i < strs.length; ++i) {
-    const values = strs.map((str) => str && str[i]);
-    if (values && checkEquality(values)) result += values[0];
-    else return result;
+  if (!strs.length) return result;
+
+  for (let i = 0; i < strs[0].length; ++i) {
+    const char = strs[0][i];
+    if (strs.every((str) => str[i] === char)) result += char;
+    else break;
   }
   return result;
-}
-
-function checkEquality(values: string[]): boolean {
-  for (let i = 0; i < values.length; ++i) {
-    if (values[i] === values[0]) {
-      continue;
-    } else {
-      return false;
-    }
-  }
-  return true;
 }
