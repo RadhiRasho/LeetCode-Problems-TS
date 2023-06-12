@@ -12,8 +12,13 @@
   "license": "ISC",
   "husky": {
     "hooks": {
-      "pre-commit": "yarn test"
+      "pre-commit": "echo '📝 Checking A Few Things 📝: ' && lint-staged"
     }
+  },
+  "lint-staged": {
+    "*.test.{ts,tsx}": [
+      "yarn test --findRelatedTests"
+    ]
   },
   "dependencies": {
     "jest": "^29.5.0",
