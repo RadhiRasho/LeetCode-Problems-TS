@@ -9,3 +9,4 @@ export * from "./plus-one";
 export * from "./add-binaries";
 export * from "./square-root";
 export * from "./climbing-stairs";
+export * from "./remove-duplicates-from-sorted-list";
