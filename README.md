@@ -1,3 +1,3 @@
 # LeetCode-Problems-TS
 
-LeetCode Problems in Typescript
+🚀 LeetCode Problems in Typescript 🐢
