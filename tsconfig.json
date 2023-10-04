@@ -1,17 +1,15 @@
 {
-  "compilerOptions": {
-    "checkJs": true,
-    "moduleResolution": "nodenext",
-    "esModuleInterop": true,
-    "pretty": true,
-    "target": "ESNext",
-    "strict": true,
-    "outDir": "./dist",
-    "rootDir": ".",
-    "sourceMap": true,
-  },
-  "exclude": [
-    "node_modules",
-    "dist"
-  ]
+	"compilerOptions": {
+		"checkJs": true,
+		"esModuleInterop": true,
+		"pretty": true,
+		"target": "ESNext",
+		"module": "NodeNext",
+		"moduleResolution": "NodeNext",
+		"strict": true,
+		"outDir": "./dist",
+		"rootDir": ".",
+		"sourceMap": true
+	},
+	"exclude": ["node_modules", "dist"]
 }
